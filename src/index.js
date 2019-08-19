@@ -34,6 +34,14 @@ document.body.appendChild(renderer.domElement);
 
 var textureloader = new THREE.TextureLoader();
 
+//Lights:
+
+var light = new THREE.DirectionalLight( 0xaabbff, 0.3 );
+light.position.x = 300;
+light.position.y = 250;
+light.position.z = - 500;
+scene.add( light );
+
 //Let's add the cube now:
 
 // To create a cube we need a BoxGeometry. This is an object that contains all the points (vertices) and fill (faces) of the cube.
